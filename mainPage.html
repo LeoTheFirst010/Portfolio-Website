@@ -1,75 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    
-    <head>
-        
-        <link rel="stylesheet" href="Effects.css">
-        
-        <title>
-        My Portfolio Website
-        </title>
-
-    </head>
-
-
-    <body>
-
-        <header>
-            <h1>
-            Welcome to my website!
-            </h1>
-
-            <div class="navButtons">
-                <div class="navButtons">
-
-                    <a href="aboutMePage.html" class="navButton">
-                        About me
-                    </a>
-
-                    <a href="skillsPage.html" class="navButton">
-                        Skills and Projects
-                    </a>
-
-                    <a href="resumePage.html" class="navButton">
-                        Resume
-                    </a>
-
-                    <a href="contactPage.html" class="navButton">
-                        Contact me
-                    </a>
-
-
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leandro Cherulli Portfolio main page">
+    <link rel="stylesheet" href="Effects.css">
+    <title>Leandro Cherulli | Portfolio</title>
+</head>
+<body class="portfolio-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="mainPage.html">Leandro Cherulli<span></span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="aboutMePage.html">About me</a>
+            <a href="skillsPage.html">Skills &amp; projects</a>
+            <a href="resumePage.html">Resume</a>
+            <a class="nav-contact" href="contactPage.html">Contact me <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+    <main id="main" class="site-main">
+        <section class="hero" aria-labelledby="intro-title">
+            <div class="hero-copy">
+                <p class="eyebrow">● &nbsp; Welcome to my portfolio</p>
+                <h1 id="intro-title">Hi there,<br>I'm <span>Leandro.</span></h1>
+                <p class="hero-subtitle">Curious about data.<br>Driven to make sense of it.</p>
+                <p class="hero-description">I'm a senior at Kennesaw State University studying Computer Science and working toward a career as a Data Analyst. Get to know me and explore what I can do.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="skillsPage.html">Explore my work <span aria-hidden="true">↗</span></a>
+                    <a class="button button-secondary" href="Leandro Cherulli - Resume.docx" download>Download resume <span aria-hidden="true">↓</span></a>
                 </div>
+                <p class="resume-note">Resume available as a Word document.</p>
             </div>
-
-
-        </header>
-
-
-        <div class="homecontent">
-            <h2>
-            Introduction
-        </h2>
-        <hr>
-        <p1>
-            Hi, nice to meet you! My name is Leandro and welcome to my website.
-            
-        </p1><br><br>
-        
-        
-        <p1>
-            Please select one of the buttons above to know a little bit more about me.
-            If that is not your wish, you are more more than welcome to hang out in this page.
-        </p1><br><br>
-        
-
-        <p1>
-            A random between 1 and 10 will be generated. Your task, if you so chooses to accept it, is to guess the next number.
-
-        </p1><br>
-        
-        </div>
-        
-    </body>
+            <figure class="portrait-card">
+                <div class="portrait-frame">
+                    
+                    <img class="portrait-photo" src="Portrait.png" alt="Leandro Cherulli portrait pic">
+                    
+                    <div class="portrait-placeholder" role="img" aria-label="Placeholder for a portrait of Leandro Cherulli">
+                        <span class="portrait-monogram" aria-hidden="true">LC</span>
+                        <span class="portrait-placeholder-label">Your portrait goes here</span>
+                    </div>
+                    <span class="portrait-tag">A little about me <span aria-hidden="true">↙</span></span>
+                </div>
+                <figcaption>
+                    <div><strong>Leandro Cherulli</strong><span>Computer Science student</span></div>
+                    <span class="caption-mark" aria-hidden="true">✳</span>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="quick-facts" aria-label="At a glance">
+            <div><p class="fact-label">Currently</p><p>Senior at Kennesaw State</p></div>
+            <div><p class="fact-label">Studying</p><p>Computer Science</p></div>
+            <div><p class="fact-label">Looking ahead</p><p>A career in data analytics</p></div>
+        </section>
+    </main>
+    <footer class="site-footer"><p>Thanks for stopping by.</p><a href="contactPage.html">Let's connect <span aria-hidden="true">↗</span></a></footer>
+</body>
 </html>

@@ -1,4 +1,3 @@
-
 header {
     display: block;
     font-size: medium;
@@ -26,16 +25,596 @@ header {
     color: black;
 }
 
-h1 { 
-    text-align: center; 
-    height: fit-content; 
+h1 {
+    text-align: center;
+    height: fit-content;
     margin-top: 1px;
 }
 
-body {background-color: beige; 
-    border:2px solid black; 
+body {
+    background-color: beige;
+    border: 2px solid black;
 }
 
 p1 {
     font-size: 18px;
+}
+/* Shared portfolio styles: use class="portfolio-page" on the body. */
+.portfolio-page {
+    --ink: #263c32;
+    --muted: #636a60;
+    --accent: #386347;
+    margin: 0;
+    border: 0;
+    background: #f7f6ef;
+    color: var(--ink);
+    font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.portfolio-page *, .portfolio-page *::before, .portfolio-page *::after {
+    box-sizing: border-box;
+}
+
+.portfolio-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.portfolio-page a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 6px;
+}
+
+.portfolio-page .skip-link {
+    position: absolute;
+    left: 16px;
+    top: -100px;
+    padding: 12px;
+    background: white;
+    z-index: 2;
+}
+
+.portfolio-page .skip-link:focus {
+    top: 12px;
+}
+
+.portfolio-page .site-header {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 30px 48px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    border-bottom: 1px solid #dbdfd4;
+}
+
+.portfolio-page .wordmark {
+    font-size: 21px;
+    font-weight: 750;
+    letter-spacing: -0.8px;
+    white-space: nowrap;
+}
+
+.portfolio-page .wordmark span {
+    color: var(--accent);
+}
+
+.portfolio-page .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.portfolio-page .main-nav a:hover, .portfolio-page .site-footer a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.portfolio-page .nav-contact {
+    border: 1px solid #b9c4b6;
+    border-radius: 7px;
+    padding: 11px 17px;
+}
+
+.portfolio-page .nav-contact span {
+    margin-left: 10px;
+}
+
+.portfolio-page .site-main {
+    max-width: 1240px;
+    padding: 0 48px;
+    margin: auto;
+}
+
+.portfolio-page .hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 80px;
+    padding: 76px 0 64px;
+}
+
+.portfolio-page .eyebrow {
+    color: var(--accent);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0 0 25px;
+}
+
+.portfolio-page h1 {
+    height: auto;
+    text-align: left;
+    margin: 0;
+    font-size: clamp(48px, 5.7vw, 76px);
+    line-height: 1.07;
+    letter-spacing: -3.5px;
+    font-weight: 650;
+}
+
+.portfolio-page h1 span {
+    color: var(--accent);
+}
+
+.portfolio-page .hero-subtitle {
+    font-size: 23px;
+    line-height: 1.45;
+    font-weight: 500;
+    margin: 25px 0 18px;
+    letter-spacing: -0.4px;
+}
+
+.portfolio-page .hero-description {
+    max-width: 465px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.85;
+    margin: 0;
+}
+
+.portfolio-page .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.portfolio-page .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 19px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 150ms;
+}
+
+.portfolio-page .button-primary {
+    background: var(--ink);
+    color: #fff;
+    border: 1px solid var(--ink);
+}
+
+.portfolio-page .button-primary:hover {
+    background: var(--accent);
+}
+
+.portfolio-page .button-secondary {
+    border: 1px solid #bcc4b7;
+}
+
+.portfolio-page .button-secondary:hover {
+    background: #e8ece1;
+}
+
+.portfolio-page .resume-note {
+    color: var(--muted);
+    font-size: 11px;
+    margin: 12px 0 0;
+}
+
+.portfolio-page .portrait-card {
+    width: 100%;
+    max-width: 425px;
+    margin: 0;
+    justify-self: end;
+    background: #fffef9;
+    padding: 12px;
+    border: 1px solid #dee1d6;
+    border-radius: 140px 140px 14px 14px;
+    box-shadow: 0 18px 42px #263c320a;
+}
+
+.portfolio-page .portrait-frame {
+    position: relative;
+    aspect-ratio: 4 / 4.5;
+    border-radius: 130px 130px 7px 7px;
+    overflow: hidden;
+    background: #dce3d3;
+}
+
+.portfolio-page .portrait-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio-page .portrait-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at 30% 15%, #eff1e5, transparent 65%), #dce3d3;
+    gap: 18px;
+}
+
+.portfolio-page .portrait-monogram {
+    font-family: Georgia, serif;
+    font-size: clamp(80px, 10vw, 130px);
+    letter-spacing: -8px;
+    color: #677d5c;
+}
+
+.portfolio-page .portrait-placeholder-label {
+    font-size: 12px;
+    color: #4f6349;
+}
+
+.portfolio-page .portrait-tag {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    background: #f7f6ef;
+    border-radius: 5px;
+    padding: 10px 13px;
+    font-size: 11px;
+}
+
+.portfolio-page .portrait-tag span {
+    margin-left: 20px;
+}
+
+.portfolio-page figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 10px 8px;
+}
+
+.portfolio-page figcaption strong {
+    display: block;
+    font-size: 16px;
+}
+
+.portfolio-page figcaption div > span {
+    display: block;
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.portfolio-page .caption-mark {
+    font-size: 35px;
+    color: var(--accent);
+}
+
+.portfolio-page .quick-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 27px 0;
+    border-top: 1px solid #dbdfd4;
+    border-bottom: 1px solid #dbdfd4;
+    gap: 24px;
+}
+
+.portfolio-page .quick-facts > div + div {
+    border-left: 1px solid #dbdfd4;
+    padding-left: 30px;
+}
+
+.portfolio-page .quick-facts p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.portfolio-page .quick-facts .fact-label {
+    margin-bottom: 9px;
+    color: var(--muted);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+}
+
+.portfolio-page .site-footer {
+    max-width: 1240px;
+    margin: auto;
+    padding: 25px 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.portfolio-page .site-footer p {
+    margin: 0;
+}
+
+/* Reusable content sections. */
+.portfolio-page .main-nav a[aria-current="page"] {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.portfolio-page .content-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #dbdfd4;
+}
+
+.portfolio-page .section-title {
+    margin: 0 0 16px;
+    font-size: 28px;
+    letter-spacing: -0.7px;
+    font-weight: 600;
+}
+
+.portfolio-page .body-copy {
+    max-width: 720px;
+    margin: 0 0 16px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.portfolio-page .body-copy:last-child {
+    margin-bottom: 0;
+}
+
+/* Compact text layout for About and other text-focused pages. */
+.portfolio-page .text-page {
+    padding: clamp(24px, 5vh, 48px) 0;
+    border-bottom: 1px solid #dbdfd4;
+}
+
+.portfolio-page .text-page .eyebrow {
+    margin-bottom: 16px;
+}
+
+.portfolio-page .text-page h1 {
+    font-size: clamp(36px, 4.5vw, 56px);
+    letter-spacing: -2px;
+}
+
+.portfolio-page .text-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+    margin-top: 32px;
+}
+
+.portfolio-page .text-columns .section-title {
+    font-size: 23px;
+    margin-bottom: 14px;
+}
+
+.portfolio-page .text-columns .body-copy {
+    line-height: 1.7;
+}
+
+/* Text introduction with a compact supporting image. */
+.portfolio-page .text-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.portfolio-page .editor-image {
+    display: block;
+    width: 288px;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #b9c4b6;
+    border-radius: 10px;
+}
+
+/* Story text paired with a supporting workspace image. */
+.portfolio-page .story-layout {
+    align-items: center;
+    column-gap: 40px;
+    row-gap: 24px;
+    margin-top: 24px;
+}
+
+.portfolio-page .story-image {
+    display: block;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #b9c4b6;
+}
+
+.portfolio-page .story-interests {
+    grid-column: 1 / -1;
+}
+
+.portfolio-page .story-interests .body-copy {
+    max-width: none;
+    margin-bottom: 8px;
+}
+
+/* Resume layout and entries. */
+.portfolio-page .resume-page {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.portfolio-page .resume-summary {
+    margin: 20px 0 24px;
+    max-width: 1050px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.portfolio-page .resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    column-gap: 40px;
+    row-gap: 24px;
+}
+
+.portfolio-page .resume-column {
+    display: grid;
+    align-content: start;
+    gap: 20px;
+    min-width: 0;
+}
+
+.portfolio-page .resume-grid .section-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.portfolio-page .resume-entry + .resume-entry {
+    margin-top: 16px;
+}
+
+.portfolio-page .resume-entry h3,
+.portfolio-page .resume-skills dt {
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.portfolio-page .resume-entry p,
+.portfolio-page .resume-skills dd {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.portfolio-page .resume-entry .entry-meta {
+    margin: 4px 0 6px;
+    font-size: 12px;
+    color: var(--accent);
+}
+
+.portfolio-page .resume-skills {
+    margin: 0;
+}
+
+.portfolio-page .resume-skills dd + dt {
+    margin-top: 12px;
+}
+
+.portfolio-page .resume-links {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.portfolio-page .resume-links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+@media (max-width: 950px) {
+    .portfolio-page .site-header {
+        flex-wrap: wrap;
+    }
+
+    .portfolio-page .hero {
+        gap: 35px;
+    }
+
+    .portfolio-page .main-nav {
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+
+}
+@media (max-width: 700px) {
+    .portfolio-page .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+
+    .portfolio-page .text-intro {
+        flex-wrap: wrap;
+    }
+
+
+    .portfolio-page .text-columns {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .portfolio-page .site-header {
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .portfolio-page .main-nav {
+        gap: 16px;
+        font-size: 12px;
+    }
+
+    .portfolio-page .nav-contact {
+        padding: 8px 10px;
+    }
+
+    .portfolio-page .site-main {
+        padding: 0 24px;
+    }
+
+    .portfolio-page .hero {
+        grid-template-columns: 1fr;
+        padding: 44px 0;
+        gap: 38px;
+    }
+
+    .portfolio-page h1 {
+        letter-spacing: -2px;
+    }
+
+    .portfolio-page .portrait-card {
+        justify-self: center;
+        max-width: 370px;
+    }
+
+    .portfolio-page .quick-facts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-page .quick-facts > div + div {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .portfolio-page .site-footer {
+        padding: 24px;
+    }
+
 }
