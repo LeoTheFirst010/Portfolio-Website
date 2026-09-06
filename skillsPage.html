@@ -1,20 +1,142 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>
-            Skills and Projects
-        </title>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Leandro Cherulli's data skills and a survey-based project examining AI usage and student performance.">
+        <script src="scripts.js"></script>
         <link rel="stylesheet" href="Effects.css">
+        <title>
+            Skills &amp; Projects | Leandro Cherulli
+        </title>
     </head>
-
-    <body>
-        <header>
-            <h1>
-            Skills
-            </h1>
-
-
+    <body class="portfolio-page">
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <a class="wordmark" href="mainPage.html">
+                Leandro Cherulli
+                <span>
+                </span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="aboutMePage.html">
+                    About me
+                </a>
+                <a href="skillsPage.html" aria-current="page">
+                    Skills &amp; projects
+                </a>
+                <a href="resumePage.html">
+                    Resume
+                </a>
+                <a class="nav-contact" href="contactPage.html">
+                    Contact me
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+                Light Mode
+            </button>
         </header>
+        <main id="main" class="site-main">
+            <article class="text-page projects-page" aria-labelledby="page-title">
+                <p class="eyebrow">
+                    Skills &amp; projects
+                </p>
+                <h1 id="page-title">
+                    Putting data
+                    <span>
+                        to work.
+                    </span>
+                </h1>
+                <div class="project-layout">
+                    <section class="featured-project" aria-labelledby="project-title">
+                        <p class="eyebrow">
+                            Featured project · SQL / DBMS / Excel
+                        </p>
+                        <h2 class="section-title" id="project-title">
+                            AI Usage and Student Performance Analysis
+                        </h2>
+                        <p class="project-question">
+                            How does students' use of AI relate to their performance in class?
+                        </p>
+                        <p class="body-copy">
+                            I created an anonymous survey and gathered student responses about AI usage and academic performance. I then cleaned and analyzed the data to explore how grades and other performance metrics relate to AI use.
+                        </p>
+                        <ol class="project-process">
+                            <li>
+                                <h3>
+                                    Collect
+                                </h3>
+                                <p>
+                                    Designed an anonymous survey to gather information about students' AI usage and classroom performance.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>
+                                    Clean &amp; organize
+                                </h3>
+                                <p>
+                                    Cleaned the responses for analysis and organized related student, AI usage, course, and grade data in relational tables.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>
+                                    Analyze
+                                </h3>
+                                <p>
+                                    Used SQL joins and aggregations to compare grades and academic performance patterns across students who used AI tools and those who did not.
+                                </p>
+                            </li>
+                        </ol>
+                        <p class="project-focus">
+                            <strong>
+                                Analysis focus:
+                            </strong>
+                            Grades, GPA, and their relationship with reported AI usage.
+                        </p>
+                    </section>
+                    <aside class="skills-panel" aria-labelledby="skills-title">
+                        <h2 class="section-title" id="skills-title">
+                            My toolkit
+                        </h2>
+                        <dl class="skill-groups">
+                            <dt>
+                                Query &amp; organize
+                            </dt>
+                            <dd>
+                                SQL, MySQL, DBMS, Microsoft Access, relational database design, joins, aggregations
+                            </dd>
+                            <dt>
+                                Analyze &amp; present
+                            </dt>
+                            <dd>
+                                Microsoft Excel, Power BI, data cleaning, pivot tables, data visualization, dashboard development
+                            </dd>
+                            <dt>
+                                Build &amp; collaborate
+                            </dt>
+                            <dd>
+                                Java, problem-solving, attention to detail, communication, teamwork
+                            </dd>
+                        </dl>
+                    </aside>
+                </div>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <p>
+                Thanks for stopping by.
+            </p>
+            <a href="contactPage.html">
+                Let's connect
+                <span aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+        </footer>
     </body>
 </html>

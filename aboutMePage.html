@@ -1,50 +1,101 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get to know Leandro Cherulli, his journey from Brazil to the United States, and his interest in data analytics.">
-    <link rel="stylesheet" href="Effects.css">
-    <title>About me | Leandro Cherulli</title>
-</head>
-<body class="portfolio-page">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-        <a class="wordmark" href="mainPage.html">Leandro Cherulli<span></span></a>
-        <nav class="main-nav" aria-label="Main navigation">
-            <a href="aboutMePage.html" aria-current="page">About me</a>
-            <a href="skillsPage.html">Skills &amp; projects</a>
-            <a href="resumePage.html">Resume</a>
-            <a class="nav-contact" href="contactPage.html">Contact me <span aria-hidden="true">↗</span></a>
-        </nav>
-    </header>
-    <main id="main" class="site-main">
-        <article class="text-page" aria-labelledby="about-title">
-            <div class="text-intro">
-                <div>
-                    <p class="eyebrow">A bit about me</p>
-                    <h1 id="about-title">Who <span>I am </span></h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Get to know Leandro Cherulli, his journey from Brazil to the United States, and his interest in data analytics.">
+        <script src="scripts.js"></script>
+        <link rel="stylesheet" href="Effects.css">
+        <title>
+            About me | Leandro Cherulli
+        </title>
+    </head>
+    <body class="portfolio-page">
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <a class="wordmark" href="mainPage.html">
+                Leandro Cherulli
+                <span>
+                </span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="aboutMePage.html" aria-current="page">
+                    About me
+                </a>
+                <a href="skillsPage.html">
+                    Skills &amp; projects
+                </a>
+                <a href="resumePage.html">
+                    Resume
+                </a>
+                <a class="nav-contact" href="contactPage.html">
+                    Contact me
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+                Light Mode
+            </button>
+        </header>
+        <main id="main" class="site-main">
+            <article class="text-page" aria-labelledby="about-title">
+                <div class="text-intro">
+                    <div>
+                        <p class="eyebrow">
+                            A bit about me
+                        </p>
+                        <h1 id="about-title">
+                            Who
+                            <span>
+                                I am
+                            </span>
+                        </h1>
+                    </div>
                 </div>
-            </div>
-            <div class="text-columns story-layout">
-                <section aria-labelledby="story-title">
-                    <h2 id="story-title" class="section-title">My story</h2>
-                    <p class="body-copy">I was born in Brazil and moved to the United States in 2017. I've lived here ever since, and both places are part of my story.</p>
-                    <p class="body-copy">On the technical side, I work with SQL, MySQL, and database management systems (DBMS). I enjoy having space in my life for both coding and the things I love outside of it.</p>
-                </section>
-                <img class="story-image" src="images/sql-workspace-v2.png" width="1536" height="1024" alt="AI-generated image of hands typing SQL in a database editor on a laptop.">
-                <section class="story-interests" aria-labelledby="outside-title">
-                    <h2 id="outside-title" class="section-title">Outside of coding</h2>
-                    <p class="body-copy">You'll often find me reading, playing games, going for a morning run, or spending time with my dog, Cristina.</p>
-                    <p class="body-copy">I believe having a balance of time spent indoors and outdoors is what makes one have a great a happy life. </p>
-                    <p class="body-copy">For me, that means making room for quiet time, getting outside, and enjoying the everyday things.</p>
-                </section>
-            </div>
-        </article>
-    </main>
-    <footer class="site-footer">
-        <p>Thanks for stopping by.</p>
-        <a href="contactPage.html">Let's connect <span aria-hidden="true">↗</span></a>
-    </footer>
-</body>
+                <div class="text-columns story-layout">
+                    <section aria-labelledby="story-title">
+                        <h2 id="story-title" class="section-title">
+                            My story
+                        </h2>
+                        <p class="body-copy">
+                            I was born in Brazil and moved to the United States in 2017. I've lived here ever since, and both places are part of my story.
+                        </p>
+                        <p class="body-copy">
+                            On the technical side, I work with SQL, MySQL, and database management systems (DBMS). I enjoy having space in my life for both coding and the things I love outside of it.
+                        </p>
+                    </section>
+                    <img class="story-image" src="images/sql-workspace-v2.png" width="1536" height="1024" alt="AI-generated image of hands typing SQL in a database editor on a laptop.">
+                    <section class="story-interests" aria-labelledby="outside-title">
+                        <h2 id="outside-title" class="section-title">
+                            Outside of coding
+                        </h2>
+                        <p class="body-copy">
+                            You'll often find me reading, playing games, going for a morning run, or spending time with my dog, Cristina.
+                        </p>
+                        <p class="body-copy">
+                            I believe having a balance of time spent indoors and outdoors is what makes one have a great a happy life.
+                        </p>
+                        <p class="body-copy">
+                            For me, that means making room for quiet time, getting outside, and enjoying the everyday things.
+                        </p>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <p>
+                Thanks for stopping by.
+            </p>
+            <a href="contactPage.html">
+                Let's connect
+                <span aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+        </footer>
+    </body>
 </html>

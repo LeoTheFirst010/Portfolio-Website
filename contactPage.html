@@ -1,48 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>
-            Contact me
-        </title>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contact Leandro Cherulli by email, or connect on LinkedIn and GitHub.">
+        <script src="scripts.js"></script>
         <link rel="stylesheet" href="Effects.css">
+        <title>
+            Contact me | Leandro Cherulli
+        </title>
     </head>
-
-    <body>
-        <header>
-            <h1>
-            Contact me
-            </h1>
-
-            <div class="navButtons">
-                <div class="navButtons">
-
-                    <a href="mainPage.html" class="navButton">
-                        Home Page
-                    </a>
-
-                    <a href="skillsPage.html" class="navButton">
-                        Skills and Projects
-                    </a>
-
-                    <a href="resumePage.html" class="navButton">
-                        Resume
-                    </a>
-
-                    <a href="aboutMePage.html" class="navButton">
-                        About me
-                    </a>
-
-                    <a href="contactPage.html" class="navButton">
-                        Contact me
-                    </a>
-
-
-
-                </div>
-            </div>
-
-
+    <body class="portfolio-page">
+        <a class="skip-link" href="#main">
+            Skip to content
+        </a>
+        <header class="site-header">
+            <a class="wordmark" href="mainPage.html">
+                Leandro Cherulli
+                <span>
+                </span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="aboutMePage.html">
+                    About me
+                </a>
+                <a href="skillsPage.html">
+                    Skills &amp; projects
+                </a>
+                <a href="resumePage.html">
+                    Resume
+                </a>
+                <a class="nav-contact" href="contactPage.html" aria-current="page">
+                    Contact me
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-pressed="false" hidden>
+                Light Mode
+            </button>
         </header>
+        <main id="main" class="site-main">
+            <article class="text-page" aria-labelledby="contact-title">
+                <p class="eyebrow">
+                    Contact me
+                </p>
+                <h1 id="contact-title">
+                    Let's
+                    <span>
+                        connect.
+                    </span>
+                </h1>
+                <p class="contact-intro">
+                    Have a question about my projects or a data analytics opportunity to share? I'd love to hear from you.
+                </p>
+                <address class="contact-grid">
+                    <a class="contact-card" href="mailto:Leandro.cherulli@hotmail.com">
+                        <span class="contact-label">
+                            Email
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </span>
+                        <span class="contact-value">
+                            Leandro.cherulli@hotmail.com
+                        </span>
+                        <span class="contact-detail">
+                            Send me a message
+                        </span>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/leandro-cherulli">
+                        <span class="contact-label">
+                            LinkedIn
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </span>
+                        <span class="contact-value">
+                            Leandro Cherulli
+                        </span>
+                        <span class="contact-detail">
+                            Connect with me professionally
+                        </span>
+                    </a>
+                    <a class="contact-card" href="https://github.com/LeoTheFirst010">
+                        <span class="contact-label">
+                            GitHub
+                            <span aria-hidden="true">
+                                ↗
+                            </span>
+                        </span>
+                        <span class="contact-value">
+                            LeoTheFirst010
+                        </span>
+                        <span class="contact-detail">
+                            Explore my code
+                        </span>
+                    </a>
+                </address>
+                <div class="copy-email-actions">
+                    <button class="button button-secondary copy-email" type="button" hidden>
+                        Copy email address
+                    </button>
+                    <p class="copy-status" role="status" aria-live="polite"></p>
+                </div>
+            </article>
+        </main>
+        <footer class="site-footer">
+            <p>
+                Thanks for stopping by.
+            </p>
+            <a href="mainPage.html">
+                Back to home
+                <span aria-hidden="true">
+                    ↗
+                </span>
+            </a>
+        </footer>
     </body>
 </html>
