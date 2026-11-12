@@ -2,7 +2,7 @@
 
 My personal portfolio showcasing my background, skills, projects, and experience as a Computer Science student at Kennesaw State University pursuing a career in data analytics.
 
-Built with HTML, CSS, and vanilla JavaScript. No dependencies or build step are required.
+Built with HTML, CSS, and JavaScript. No dependencies or build step are required.
 
 ## Features
 
@@ -36,5 +36,4 @@ To update the resume, replace `Leandro Cherulli - Resume.pdf` with the latest ve
 
 ## Connect
 
-- [GitHub](https://github.com/LeoTheFirst010)
 - [LinkedIn](https://www.linkedin.com/in/leandro-cherulli)
